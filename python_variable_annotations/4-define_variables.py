@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """giving value to variables"""
 
-a = 1
-pi = 3.14
-i_understand_annotations = True
+a = int(1)
+pi = float(3.14)
+i_understand_annotations = bool(True)
 school = "Holberton"
