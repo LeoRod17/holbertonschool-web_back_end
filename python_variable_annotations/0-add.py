@@ -2,6 +2,6 @@
 """Making an add function"""
 
 
-def add (a: float, b: float):
-    ret = float (a + b)
-    return  ret
+def add(a: float, b: float) -> float:
+    ret = a + b
+    return ret
