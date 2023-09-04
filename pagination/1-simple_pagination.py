@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """Copy index_range from the previous task and the following class into your code"""
 import csv
 import math
