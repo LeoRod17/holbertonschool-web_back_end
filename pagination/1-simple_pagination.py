@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+"""Copy index_range from the previous task and the following class into your code"""
 import csv
 import math
 from typing import List, Tuple
