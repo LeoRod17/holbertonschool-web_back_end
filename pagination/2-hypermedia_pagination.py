@@ -42,8 +42,6 @@ class Server:
         result: Tuple = index_range(page, page_size)
         self.dataset()
         return self.__dataset[result[0]:result[1]]
-    
-
 
     def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict[str, int]:
         """Implement a get_hyper method that takes the same arguments
@@ -67,6 +65,6 @@ class Server:
         else:
             prev_page: List = None
         dic = {'page_size': page_size, 'page': page, 'data': data,
-               'next_page': next_page,'prev_page': prev_page,
+               'next_page': next_page, 'prev_page': prev_page,
                'total_pages': total_pages}
         return dic
