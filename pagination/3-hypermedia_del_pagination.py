@@ -73,4 +73,10 @@ class Server:
             6 and 7 were deleted, the user should still receive rows indexed
             10 to 19 included.
         """
-        
+        self.indexed_dataset()
+        lista: List = []
+        for x in self.__indexed_dataset:
+            if x > index and x < page_size + index:
+                lista.append(self.__indexed_dataset[x])
+        return {'index': index, 'data': lista, 'page_size': page_size,
+                'next_index': page_size + index}
