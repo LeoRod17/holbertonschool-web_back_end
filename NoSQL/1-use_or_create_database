@@ -1,6 +1,3 @@
 #!/usr/bin/env python3
 // Write a script that creates or uses the database my_db:
-
-
 use my_db
-if __name__ == "__main__":
