@@ -1,9 +1,6 @@
-import listOfStudents from "./9-hoisting.js";
+import listOfStudents, { StudentHolberton, HolbertonClass } from "./9-hoisting.js";
 
-console.log(listOfStudents);
-
-const listPrinted = listOfStudents.map(
-    student => student.fullStudentDescription
-);
-
-console.log(listPrinted)
+test("initialization works correctly", () => {
+    expect(listOfStudents[0] instanceof StudentHolberton).toBe(true);
+    expect(listOfStudents[0].holbertonClass instanceof HolbertonClass).toBe(true);
+});
