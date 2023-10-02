@@ -1,8 +1,8 @@
 export default function getFullResponseFromAPI(success) {
-  if (success) {
-    return Promise.resolve({ status: 200, body: 'Success' });
-  }
-  else {
-    return Promise.reject('The fake API is not working currently');
-  }
+  return new Promise(function (comp, fail) {
+    if (success) {
+      comp({ status: 200, body: 'Success' });
+    }
+    fail(Error('The fake API is not working currently'));
+  });
 }
