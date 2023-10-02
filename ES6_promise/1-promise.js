@@ -1,5 +1,5 @@
 export default function getFullResponseFromAPI(success) {
-  return new Promise(function (comp, fail) {
+  return new Promise((comp, fail) => {
     if (success) {
       comp({ status: 200, body: 'Success' });
     }
